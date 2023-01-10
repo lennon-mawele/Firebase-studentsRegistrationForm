@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:clipToPadding="false"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_14sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/student_registration_form"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="30"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/_17sdp" />
+
+        <EditText
+            android:id="@+id/courseEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/course"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <EditText
+            android:id="@+id/rollNoEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/roll_no"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:maxLength="4"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <EditText
+            android:id="@+id/durationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/duration_years"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="@dimen/_37sdp"
+                android:backgroundTint="@color/black"
+                android:layout_height="@dimen/_37sdp"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitBtn"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:text="@string/submit"
+                app:cornerRadius="10dp"
+                android:layout_marginBottom="@dimen/_17sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

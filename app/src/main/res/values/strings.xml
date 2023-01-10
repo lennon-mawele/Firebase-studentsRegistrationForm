@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Regis</string>
+    <string name="submit">Submit</string>
+    <string name="duration_years">Duration (years)</string>
+    <string name="roll_no">Roll No.</string>
+    <string name="course">Course</string>
+    <string name="name">Name</string>
+    <string name="student_registration_form">Student Registration Form</string>
+</resources>
